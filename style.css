@@ -1,111 +1,118 @@
-#project-gallery ul {
-  list-style: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
-  margin: 0 auto;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #1a1a1d; /* dark gray */
+  color: #f8f8f2;       /* light text */
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #4b0082, #8a2be2); /* purple gradient */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #dcdcdc;
+}
+
+.artist-images {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 40px; 
-  max-width: 500px; 
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-#project-gallery li {
-  display: inline-block;
-  font-size: 16px;
+.artist-images img {
+  height: 180px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
- body {
-            background-color: #f0f0f0;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
+nav {
+  background: #2c2f33;
+  padding: 15px 0;
+  text-align: center;
+}
 
-        h1 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: white;
-            background-color: lightgreen;
-            padding: 20px;
-            border: 4px solid black;
-            margin: 30px auto;
-            width: 50%;
-            text-align: center;
-        }
+nav a {
+  color: #f1c40f; /* yellow */
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
 
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; 
-            align-items: center; 
-            padding: 20px;
-            margin: 30px auto;
-            border: 2px solid red;
-            width: 80%;
-            background-color: white;
-        }
+nav a:hover {
+  color: #e67e22; /* orange */
+}
 
-        
-        img {
-            width: 200px;
-            height: auto;
-            margin: 20px;
-            border: 3px solid black;
-            padding: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
 
-        img:hover {
-            transform: scale(1.1);
-            border-color: red;
-        }
+section {
+  background: #2e2e2e;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
 
-      
-        .text-container {
-            width: 100%; 
-            text-align: center;
-            margin-top: 20px;
-        }
+section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #f1c40f;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
 
-        h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
+section ul {
+  padding-left: 20px;
+}
 
-       
-        a {
-            display: inline-block;
-            color: blue;
-            font-size: 18px;
-            text-decoration: none;
-            padding: 10px 15px;
-            border: 2px solid black;
-            margin: 10px auto;
-            background-color: white;
-        }
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
 
-        a:hover {
-            color: red;
-            text-decoration: underline;
-            background-color: lightgray;
-        }
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
+footer {
+  background: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
 
-        footer {
-            margin-top: 40px;
-            padding: 15px;
-            background-color: black;
-            color: white;
-            border-top: 3px solid red;
-            text-align: center;
-        }
+a {
+  color: #1abc9c; /* teal */
+}
 
-<style>
-  .centered-text {
-    text-align: center;
-    max-width: 1800px; 
-    margin: 0 auto;    
-    padding: 10px 20px;
-  }
-  h2 {
-    text-align: center;
-    margin-top: 30px;
-  }
-</style>
+a:hover {
+  text-decoration: underline;
+  color: #16a085;
+}
