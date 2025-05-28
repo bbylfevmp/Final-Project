@@ -1,118 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Webpage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Den of JAW</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #212529;
+    }
+
+    header {
+      background-color: #121212;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      max-height: 150px;
+      margin: 0 10px;
+      border-radius: 10px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #1e1e1e;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: #343a40;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .text-container, .centered-text {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #121212;
+      color: white;
+    }
+
+    a {
+      color: #0d6efd;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h1>My First Webpage</h1>
-      
-      
-      <img src= "Osamason.png">
-     <img src= "GL4.png">
-      <h1>Welcome to The Den Of JAW</h1>
-      <p>Hello to ALL except the opps</p>
+
+  <header>
+    <h1>Welcome to The Den Of JAW</h1>
+    <p>Hello to ALL except the opps</p>
+    <img src="Osamason.png" alt="Osamason" />
+    <img src="GL4.png" alt="Glokk40spaz" />
+  </header>
+
+  <nav>
+    <a href="https://isocpp.org/">C++</a>
+    <a href="https://www.w3schools.com/html/">HTML</a>
+  </nav>
+
+  <main>
+    <section class="text-container">
+      <h2>Programming Concepts I Know</h2>
       <ul>
-      <p><a href="https://isocpp.org/">C++</a></p>
-      <p><a href="https://www.w3schools.com/html/">HTML</a></p>
-     Variables<br>
-     Arrays<br>
-     Loops<br>
-     Functions<br>
-     Parameters<br>
-     If, If Else, Else Statements
-    </p>
+        <li>Variables</li>
+        <li>Arrays</li>
+        <li>Loops</li>
+        <li>Functions</li>
+        <li>Parameters</li>
+        <li>If, If-Else, Else Statements</li>
+      </ul>
+    </section>
 
-<h2>About Me (JAW)</h2>
+    <section class="text-container">
+      <h2>About Me (JAW)</h2>
+      <p>I have a wonderful, amazing, fantastic, loving, perfect girlfriend!</p>
+      <p>I am always listening to music and enjoy a wide variety of artists.</p>
+      <p>The pictures above are my two favorite artists: Osamason and Glokk40spaz, both rappers.</p>
+    </section>
 
-<p>I have a wonderful, amazing, fantastic, loving, perfect girlfriend!</p>
-<p>I am always listening to music</p>
-<p>I have a large variety of artists that I listen to</p>
-<p>The pictures at the top of the page are my top 2 favorite artists</p>
-<p>In the first picture we have an artist named Osamason who is a rapper</p>
-<p>In the second picture we have an artist named Glokk40spaz who is also a rapper</p>
-        
-  
+    <section class="text-container">
+      <h2>Deeper into the Life of JAW</h2>
+      <p>My name is Joseph Alan Wisely. I'm 16 years old, born April 21, 2008, and currently a junior at Mt. Eden High. I’ve had a journey through sports, injuries, and growth. After suffering a torn ACL and meniscus, I’m now recovering post-surgery and focusing on the next chapter in life.</p>
+    </section>
 
-<div class="centered-text">
-  <h2>Deeper into the life of JAW</h2>
-  <p>My government name is Joseph Alan Wisely. At the date this website is created I am 16 years old. I was born on April 21, 2008. I am currently a junior in highschool and I attend Mt. Eden High. My interests used to be very wide however they have significantly decreased as I grew older. I grew up moving a lot going from apartment to house to house to house and finally ending up in the house I live in now. My first sport was baseball, and I was pretty good at it. Then eventually I started playing basketball as well. There was a time for a couple of years when I would play baseball then have basketball games after. Growing up I was a very active kid. Then when I hit around 11 years old I started to lose my love for the sport, so I ended up quitting and just focusing on basketball. I played for a while all the way up to sophomore year when I was on varsity. However, it all came to an end in March of 2024. It was my first AAU game of the season. To explain it simply, a player 150 pounds bigger than me ran into me... Doesn't sound terribly bad right? Well you're WRONG. His ginormous knee rammed into the side of mine and popped it out of place. It was painful and I wasn't able to walk for at least 20 minutes. So I took a 2 week break after that then decided to come back and play in April. Then in one of my games I unfortunately landed wrong and hurt it again. That is when it got really serious. As a result of that, I got an MRI. I was then told I had torn my ACL and part of my meniscus. I received surgery in August and have been recovering ever since.</p>
-</div>
+    <section class="text-container">
+      <h2>The Dark Side of JAW (Music)</h2>
+      <p>My music taste is an acquired one, full of underground and unique artists. I love music — it’s everything to me, and I even listen to unreleased songs from my favorite artists. Some names include Osamason, Glokk40spaz, Playboi Carti, Ken Carson, Destroy Lonely, and many more.</p>
+    </section>
 
-<div class="centered-text">
-  <h2>The Dark side of JAW</h2>
-  <p>Now if you are deciding to read this you are asking for the music taste. So without further ado, let's dive deep into the darkest depths of the iceberg. I would say my music taste is an acquired taste for sure, a taste not everyone could appreciate. There are so many artists that I listen to. So now I am going to list a few in no particular order. Osamason, Glokk40spaz, Playboi Carti, Ken Carson, Destroy Lonely, Homixide Gang, 1oneam, Future, Young Thug, Summrs, Che, Ohsxnta, Yhapojj, Lucki, Lil Uzi, Travis Scott and SO MANY MORE. I like to enjoy music that most would consider underground or not as popular. If you can't already tell, I love music. Besides my girlfriend, music is my everything. Something that could never do me wrong. I am so addicted to music I listen to music that these artists have yet to release. I love music and I always will.</p>
-</div>
+    <section class="text-container">
+      <h2>Favorite Albums</h2>
+      <ul>
+        <li>Flex Musix (FLXTRA) - Osamason (2023)</li>
+        <li>Dont Get Took Off - Glokk40spaz (2019)</li>
+        <li>2wo Glokks - Glokk40spaz (2021)</li>
+        <li>NOSTYLIST+ (ULTRA) - Destroy Lonely (2022)</li>
+        <li>If Looks Could Kill (Director’s Cut) - Destroy Lonely (2023)</li>
+        <li>Project X - Ken Carson (2021)</li>
+        <li>A Great Chaos (Deluxe) - Ken Carson (2024)</li>
+        <li>Whole Lotta Red - Playboi Carti (2020)</li>
+        <li>So Much Fun (Deluxe) - Young Thug (2019)</li>
+        <li>Barter 6 - Young Thug (2015)</li>
+        <li>DS2 (Deluxe) - Future (2015)</li>
+        <li>Nothing more Nothing Less - Summrs (2022)</li>
+        <li>One Death - 1oneam (2024)</li>
+      </ul>
+      <div class="image-grid">
+        <img src="FLXTRA.png" />
+        <img src="DGTO.png" />
+        <img src="2wo.png" />
+        <img src="NS.png" />
+        <img src="ILCK.png" />
+        <img src="PRX.png" />
+        <img src="AGC.png" />
+        <img src="WLR.png" />
+        <img src="SMF.png" />
+        <img src="BAR6.png" />
+        <img src="DS2.png" />
+        <img src="NMNL.png" />
+        <img src="1D.png" />
+      </div>
+    </section>
 
-<div class="centered-text">
-  <h2>A few of JAW'S favorite albums</h2>
-  <p>
-    Flex Musix (FLXTRA) - Osamason (2023)<br>
-    Dont Get Took Off - Glokk40spaz (2019)<br>
-    2wo Glokks - Glokk40spaz (2021)<br>
-    NOSTYLIST+ (ULTRA) - Destroy Lonely (2022)<br>
-    If Looks Could Kill (Directors Cut) - Destroy Lonely (2023)<br>
-    Project X - Ken Carson (2021)<br>
-    A Great Chaos (Deluxe) - Ken Carson (2024)<br>
-    Whole Lotta Red - Playboi Carti (2020)<br>
-    So Much Fun (Deluxe) - Young Thug (2019)<br>
-    Barter 6 - Young Thug (2015)<br>
-    DS2 (Deluxe) - Future (2015)<br>
-    Nothing more Nothing Less - Summrs (2022)<br>
-    One Death - 1oneam (2024)
-  </p>
-  <p>Pictures of All the albums listed above</p>
-</div>
+    <section class="text-container">
+      <h2>Secret Link of JAW</h2>
+      <p><a href="https://chatgpt.com/" target="_blank">My favorite totally top secret website</a></p>
+    </section>
 
-<img src= "FLXTRA.png">
-<img src= "DGTO.png"    >
-    <img src= "2wo.png">
-    <img src= "NS.png">
-    <img src= "ILCK.png">
-    <img src= "PRX.png">
-    <img src= "AGC.png">
-    <img src= "WLR.png">
-         <main>
-  <div class="image-grid">
-    <img src= "SMF.png">
-     <img src= "BAR6.png">
-    <img src= "DS2.png">
-    <img src= "NMNL.png">
-    <img src= "1D.png">
-  </div>
+    <section class="text-container">
+      <h2>AP CSP Journey</h2>
+      <p>This class has taught me more than just programming — it’s taught me problem solving, patience, and passion. I went from zero coding knowledge to building games and websites. Special thanks to Mr. Alvarado, aka Gary, for inspiring and guiding me through it all. You're a beast, Mr. Alvarado!</p>
+    </section>
 
-  
-  <div class="text-container">
-    <h2>Secret Link of JAW</h2>
-    <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">
-      My favorite totally top secret website
-    </a>
-  </div>
+    <section class="text-container" id="project-gallery">
+      <h2>My JavaScript Projects</h2>
+      <ul>
+        <li><a href="flappyball/index.html" target="_blank">Flappy Ball</a> — Flappy Bird but a ball</li>
+        <li><a href="cuppong/index.html" target="_blank">Cup Pong</a> — A simple cup pong game</li>
+        <li><a href="fortunecookie/index.html" target="_blank">Fortune Cookie Generator</a> — Generates random fortunes</li>
+      </ul>
+    </section>
+  </main>
 
- 
-  <div class="text-container">
-    <h2>The trials and tribulations in AP Computer Science Principles</h2>
-    <p>
-      Man I don't even know where to begin. This class has been a long ride. I have learned so much in this class. Obviously I learned about computer science but I feel like now even my problem solving skills have gotten better thanks to the class and Mr. Alvarado. I don't even want to get in to the specifics because if I do that I might be here until the next school year. Some examples are structuring a website using html, styling a page using css, fixing layout bugs, programming in javascript and c++. I even designed my own game just off of what I learned from this class. Just think of it like this, at the beginning of the year I didn't know anything about code and now you might be able to consider me a game developer. Sounds pretty rad to me. And I think overall the most important thing I learned was to take everything one step at a time. Like going over each line of code, analyzing it and understanding it line by line. I think that skill can be applied to a lot of things in life which I plan to take with me to the afterlife. Now I just want to give a special thanks to Mr. Alvarado aka my friend Gary. Mr. Alvarado you've been nothing short of amazing this year. I genuinely have so much respect for you and I honestly look up to you. What you've been able to accomplish this year is in my eyes really impressive. Tackling an AP class whilst being in college and having a life outside of all of it. And you did it all off of some coffee. You're a beast Mr. Alvarado I don't know how you do it. You got a strong will and that is going to get you to the places you want to go. Thanks for everything Mr. Alvarado. 
-    </p>
-  </div>
-<section id="project-gallery">
-    <h2>My JavaScript Projects</h2>
-    <ul>
-      <li>
-        <a href="flappyball/index.html" target="_blank">Flappy Ball</a> Flappy bird but a ball
-      </li>
-      <li>
-        <a href="cuppong/index.html" target="_blank">Cup Pong</a>  A simple cup pong game
-      </li>
-      <li>
-        <a href="fortunecookie/index.html" target="_blank">Fortune Cookie Generator</a>  A fortune cookie generator that generates random fortunes
-      </li>
-      
-   
-</main>
   <footer>
-    <p>&copy; 2025 My Webpage</p>
+    <p>&copy; 2025 The Den of JAW</p>
   </footer>
-</main>
+
+</body>
+</html>
+
