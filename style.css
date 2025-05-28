@@ -1,1 +1,14 @@
+#project-gallery ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  max-width: 500px; 
+}
 
+#project-gallery li {
+  display: inline-block;
+  font-size: 16px;
+}
