@@ -4,62 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Den of JAW</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
       margin: 0;
-      padding: 0;
-      color: #212529;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #121212;
-      color: white;
-      padding: 2rem;
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
-    header img {
-      max-height: 150px;
-      margin: 0 10px;
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0;
+      font-style: italic;
+      color: #ccc;
+    }
+
+    .artist-images {
+      margin-top: 1.5rem;
+    }
+
+    .artist-images img {
+      max-height: 180px;
+      margin: 0 15px;
       border-radius: 10px;
     }
 
     nav {
-      text-align: center;
-      background-color: #1e1e1e;
+      background-color: #333;
       padding: 1rem;
+      text-align: center;
     }
 
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
       margin: 0 1rem;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bfff;
     }
 
     main {
-      padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
+      padding: 2rem 1rem;
     }
 
     section {
-      margin-bottom: 3rem;
+      background-color: #fff;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
     h2 {
-      color: #343a40;
-      border-bottom: 2px solid #dee2e6;
+      margin-top: 0;
+      color: #111;
+      border-bottom: 2px solid #eee;
       padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
     }
 
     .image-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
       gap: 10px;
       margin-top: 1rem;
     }
@@ -67,24 +94,19 @@
     .image-grid img {
       width: 100%;
       border-radius: 8px;
-    }
-
-    .text-container, .centered-text {
-      background-color: #ffffff;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
 
     footer {
+      background-color: #1a1a1a;
+      color: #fff;
       text-align: center;
       padding: 1rem;
-      background-color: #121212;
-      color: white;
+      margin-top: 2rem;
     }
 
     a {
-      color: #0d6efd;
+      color: #007bff;
     }
 
     a:hover {
@@ -97,8 +119,10 @@
   <header>
     <h1>Welcome to The Den Of JAW</h1>
     <p>Hello to ALL except the opps</p>
-    <img src="Osamason.png" alt="Osamason" />
-    <img src="GL4.png" alt="Glokk40spaz" />
+    <div class="artist-images">
+      <img src="Osamason.png" alt="Osamason">
+      <img src="GL4.png" alt="Glokk40spaz">
+    </div>
   </header>
 
   <nav>
@@ -107,7 +131,7 @@
   </nav>
 
   <main>
-    <section class="text-container">
+    <section>
       <h2>Programming Concepts I Know</h2>
       <ul>
         <li>Variables</li>
@@ -119,24 +143,24 @@
       </ul>
     </section>
 
-    <section class="text-container">
+    <section>
       <h2>About Me (JAW)</h2>
       <p>I have a wonderful, amazing, fantastic, loving, perfect girlfriend!</p>
       <p>I am always listening to music and enjoy a wide variety of artists.</p>
       <p>The pictures above are my two favorite artists: Osamason and Glokk40spaz, both rappers.</p>
     </section>
 
-    <section class="text-container">
+    <section>
       <h2>Deeper into the Life of JAW</h2>
       <p>My name is Joseph Alan Wisely. I'm 16 years old, born April 21, 2008, and currently a junior at Mt. Eden High. I’ve had a journey through sports, injuries, and growth. After suffering a torn ACL and meniscus, I’m now recovering post-surgery and focusing on the next chapter in life.</p>
     </section>
 
-    <section class="text-container">
+    <section>
       <h2>The Dark Side of JAW (Music)</h2>
       <p>My music taste is an acquired one, full of underground and unique artists. I love music — it’s everything to me, and I even listen to unreleased songs from my favorite artists. Some names include Osamason, Glokk40spaz, Playboi Carti, Ken Carson, Destroy Lonely, and many more.</p>
     </section>
 
-    <section class="text-container">
+    <section>
       <h2>Favorite Albums</h2>
       <ul>
         <li>Flex Musix (FLXTRA) - Osamason (2023)</li>
@@ -154,33 +178,33 @@
         <li>One Death - 1oneam (2024)</li>
       </ul>
       <div class="image-grid">
-        <img src="FLXTRA.png" />
-        <img src="DGTO.png" />
-        <img src="2wo.png" />
-        <img src="NS.png" />
-        <img src="ILCK.png" />
-        <img src="PRX.png" />
-        <img src="AGC.png" />
-        <img src="WLR.png" />
-        <img src="SMF.png" />
-        <img src="BAR6.png" />
-        <img src="DS2.png" />
-        <img src="NMNL.png" />
-        <img src="1D.png" />
+        <img src="FLXTRA.png" alt="FLXTRA">
+        <img src="DGTO.png" alt="DGTO">
+        <img src="2wo.png" alt="2wo Glokks">
+        <img src="NS.png" alt="NOSTYLIST">
+        <img src="ILCK.png" alt="ILCK">
+        <img src="PRX.png" alt="Project X">
+        <img src="AGC.png" alt="AGC">
+        <img src="WLR.png" alt="WLR">
+        <img src="SMF.png" alt="SMF">
+        <img src="BAR6.png" alt="Barter 6">
+        <img src="DS2.png" alt="DS2">
+        <img src="NMNL.png" alt="NMNL">
+        <img src="1D.png" alt="One Death">
       </div>
     </section>
 
-    <section class="text-container">
+    <section>
       <h2>Secret Link of JAW</h2>
       <p><a href="https://chatgpt.com/" target="_blank">My favorite totally top secret website</a></p>
     </section>
 
-    <section class="text-container">
+    <section>
       <h2>AP CSP Journey</h2>
       <p>This class has taught me more than just programming — it’s taught me problem solving, patience, and passion. I went from zero coding knowledge to building games and websites. Special thanks to Mr. Alvarado, aka Gary, for inspiring and guiding me through it all. You're a beast, Mr. Alvarado!</p>
     </section>
 
-    <section class="text-container" id="project-gallery">
+    <section>
       <h2>My JavaScript Projects</h2>
       <ul>
         <li><a href="flappyball/index.html" target="_blank">Flappy Ball</a> — Flappy Bird but a ball</li>
