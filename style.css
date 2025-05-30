@@ -1,18 +1,17 @@
 .album-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin: 40px auto;
+  max-width: 90%;
 }
 
 .album {
-  width: 200px;
+  width: 160px;
   text-align: center;
-  background-color: #f5f5f5;
-  border-radius: 12px;
-  padding: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  padding: 0;
   transition: transform 0.2s ease;
 }
 
@@ -22,13 +21,16 @@
 
 .album img {
   width: 100%;
-  height: auto;
+  height: 160px;
+  object-fit: cover;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .album .info {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #222;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #000;
+  line-height: 1.2;
 }
 
