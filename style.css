@@ -1,13 +1,18 @@
-.album-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 30px;
+.album-scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
   padding: 20px;
-  justify-items: center;
+}
+
+.album-list {
+  display: flex;
+  gap: 30px;
 }
 
 .album {
+  display: inline-block;
   text-align: center;
+  flex: 0 0 auto;
 }
 
 .album img {
@@ -29,3 +34,4 @@
   color: #333;
   font-weight: 500;
 }
+
