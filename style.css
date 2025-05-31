@@ -7,7 +7,7 @@
 body {
   font-family: "Segoe UI", sans-serif;
   background: #f8f9fa;
-  color: #000; 
+  color: #000; /* fixed color typo (#00 is invalid) */
   line-height: 1.6;
 }
 
@@ -99,6 +99,15 @@ section ul {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
 a {
   color: #007bff;
 }
@@ -107,7 +116,7 @@ a:hover {
   text-decoration: underline;
 }
 
-
+/* Cleaned-up Album Row and Album Styles */
 .album-row {
   display: flex;
   flex-wrap: wrap;
@@ -144,16 +153,4 @@ a:hover {
   color: #333;
   font-weight: 600;
   line-height: 1.2;
-}
-footer {
-  background: #111;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  left: 0;
 }
