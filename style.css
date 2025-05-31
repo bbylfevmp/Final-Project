@@ -25,7 +25,7 @@ header h1 {
 
 header p {
   font-size: 1.2rem;
-  color: #000; /* fixed color typo */
+  color: #000; 
 }
 
 .artist-images {
@@ -106,7 +106,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
-  width: 100vw; 
+  width: 1000vw; 
   position: relative;
   left: 0;
 }
