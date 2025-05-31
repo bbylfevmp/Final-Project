@@ -7,8 +7,11 @@
 body {
   font-family: "Segoe UI", sans-serif;
   background: #f8f9fa;
-  color: #000; 
+  color: #000;
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -46,6 +49,7 @@ nav {
   background: #CAC2B5;
   padding: 15px 0;
   text-align: center;
+  flex-shrink: 0; /* prevent nav from shrinking in flex layout */
 }
 
 nav a {
@@ -65,6 +69,7 @@ main {
   max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
+  flex-grow: 1; 
 }
 
 section {
@@ -87,18 +92,26 @@ section ul {
   padding-left: 20px;
 }
 
+
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin-top: 20px;
+  justify-content: center;
+  max-width: 840px; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .image-grid img {
-  width: 100%;
+  width: 160px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
+
+
 a {
   color: #007bff;
 }
@@ -106,7 +119,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
 
 .album-row {
   display: flex;
@@ -145,16 +157,17 @@ a:hover {
   font-weight: 600;
   line-height: 1.2;
 }
+
+
 footer {
   background: #111;
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px;
-
-  position: relative;
+  margin-top: auto; 
   width: 100%;
-  bottom: 0;
+  flex-shrink: 0;
+  position: relative; 
   left: 0;
+  bottom: 0;
 }
-
