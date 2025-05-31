@@ -7,7 +7,7 @@
 body {
   font-family: "Segoe UI", sans-serif;
   background: #f8f9fa;
-  color: #000; /* fixed color typo (#00 is invalid) */
+  color: #000; 
   line-height: 1.6;
 }
 
@@ -116,7 +116,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Cleaned-up Album Row and Album Styles */
+
 .album-row {
   display: flex;
   flex-wrap: wrap;
