@@ -113,21 +113,19 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Album rows container: flex, fixed width to fit exactly 5 albums */
 .album-row {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
-  flex-wrap: nowrap; /* no wrapping to keep fixed number per row */
-  max-width: 860px; /* 5 albums * 160px + 4 gaps * 20px = 860px */
+  flex-wrap: nowrap;
+  max-width: 860px; 
   margin-left: auto;
   margin-right: auto;
 }
 
-/* For last row with only 3 albums, center them */
 .album-row:last-child {
-  max-width: 520px; /* 3 albums * 160px + 2 gaps * 20px = 520px */
+  max-width: 520px; 
   justify-content: center;
 }
 
