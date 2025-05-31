@@ -116,55 +116,43 @@ a:hover {
   text-decoration: underline;
   color: #16a085;
 }
-.album-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 25px;
-  margin-top: 20px;
-}
 
-.album {
+/* ==== Album Row Container for Apple Music style ==== */
+.album-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  flex-wrap: wrap;           /* wrap to multiple rows */
+  gap: 20px;                 /* space between albums */
+  justify-content: flex-start; /* align left */
+  max-width: 900px;          /* max width container */
+  margin: 0 auto;            /* center horizontally */
+  padding: 10px;
 }
 
-.album img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+/* Each Album Card */
+.album {
+  width: 140px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #222;
+  cursor: pointer;
   transition: transform 0.2s ease;
-}
-
-.album img:hover {
-  transform: scale(1.05);
-}
-
-.album-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.album {
-  width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+}
+
+.album:hover {
+  transform: scale(1.05);    /* subtle zoom on hover */
 }
 
 .album img {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin-bottom: 8px;
 }
 
 .album-info {
-  font-size: 0.9rem;
-  color: #222;
+  line-height: 1.3;
   font-weight: 600;
 }
